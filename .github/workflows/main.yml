@@ -16,7 +16,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ env.HOST }} 
+          server: ${{ secrets.HOST }} 
           username: u392776179.umeshahewage
           password: Aruna@umesha123
           server-dir: './'
